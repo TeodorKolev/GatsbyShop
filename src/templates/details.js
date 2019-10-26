@@ -4,7 +4,7 @@ import StarRatingComponent from 'react-star-rating-component';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-const { prodUrl } = process.env;
+import { prodUrl } from '../utils/constants';
 
 const ProductDetails = data => (
   < Layout >

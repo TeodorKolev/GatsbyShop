@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StarRatingComponent from 'react-star-rating-component';
-const { prodUrl } = process.env;
+import { prodUrl } from '../utils/constants';
 
 class IndexPost extends React.Component {
   constructor(props) {

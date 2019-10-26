@@ -7,7 +7,7 @@ import Banner from "../components/banner"
 import LatestBlogs from "../components/latestBlog"
 import Countdown from "../components/countdown"
 import StarRatingComponent from 'react-star-rating-component';
-const { prodUrl } = process.env;
+import { prodUrl } from '../utils/constants';
 
 class IndexPost extends React.Component {
 
