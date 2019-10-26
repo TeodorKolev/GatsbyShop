@@ -1,7 +1,6 @@
 
   Live Demo:
-  https://todo.com
-
+  https://teodorkolev.github.io/GatsbyShop/
 
   ## 🚀 Quick start
 
