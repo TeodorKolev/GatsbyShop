@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StarRatingComponent from 'react-star-rating-component';
+const { prodUrl } = process.env;
 
 class IndexPost extends React.Component {
   constructor(props) {
@@ -69,7 +70,7 @@ class IndexPost extends React.Component {
                         data-item-price={items.node.price}
                         data-item-image={items.node.image === null ? "" : items.node.image.fixed.src}
                         data-item-name={items.node.name}
-                        data-item-url={`${items.node.url}`}
+                        data-item-url={prodUrl + items.node.slug}
                       >
                         <i className="fas fa-shopping-bag" />Add to Cart
                     </a>

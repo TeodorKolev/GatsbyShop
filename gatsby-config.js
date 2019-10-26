@@ -4,10 +4,11 @@ dotenv.config();
 const { spaceId, accessToken, snipcart } = process.env;
 
 module.exports = {
+  pathPrefix: "/GatsbyShop",
   siteMetadata: {
-    title: `OneShopper`,
+    title: `GatsbyShop`,
     description: `E-Commerce site with Gatsby and React`,
-    author: `@rohitguptab`,
+    author: `@teodorkolev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

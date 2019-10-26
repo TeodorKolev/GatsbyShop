@@ -4,6 +4,7 @@ import StarRatingComponent from 'react-star-rating-component';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+const { prodUrl } = process.env;
 
 const ProductDetails = data => (
   < Layout >
@@ -47,7 +48,7 @@ const ProductDetails = data => (
               data-item-price={data.data.contentfulProduct.price}
               data-item-image={data.data.contentfulProduct.image === null ? "" : data.data.contentfulProduct.image.fixed.src}
               data-item-name={data.data.contentfulProduct.name}
-              data-item-url={`${data.data.contentfulProduct.url}`}
+              data-item-url={prodUrl + data.data.contentfulProduct.slug}
             >
               <i className="fas fa-tags" />
               Buy Now

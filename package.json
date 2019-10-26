@@ -1,9 +1,9 @@
 {
-  "name": "OneShopper",
+  "name": "GatsbyShop",
   "private": true,
   "description": "E-Commerce site with Gatsby and React",
   "version": "0.1.0",
-  "author": "Rohit Gupta <rohitguptab33@gmail.com>",
+  "author": "Teodor Kolev <teodorkolev007@gmail.com>",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "disqus-react": "^1.0.7",
@@ -30,6 +30,7 @@
     "react-tabs": "^3.0.0"
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "prettier": "^1.18.2"
   },
   "keywords": [
@@ -37,6 +38,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",

@@ -7,6 +7,7 @@ import Banner from "../components/banner"
 import LatestBlogs from "../components/latestBlog"
 import Countdown from "../components/countdown"
 import StarRatingComponent from 'react-star-rating-component';
+const { prodUrl } = process.env;
 
 class IndexPost extends React.Component {
 
@@ -45,7 +46,7 @@ class IndexPost extends React.Component {
                         data-item-price={items.node.price}
                         data-item-image={items.node.image === null ? "" : items.node.image.fluid.src}
                         data-item-name={items.node.name}
-                        data-item-url={`${items.node.url}`}
+                        data-item-url={prodUrl + items.node.slug}
                       >
                         <i className="fas fa-shopping-bag" />Add to Cart
                     </a>
