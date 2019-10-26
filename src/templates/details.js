@@ -48,7 +48,7 @@ const ProductDetails = data => (
               data-item-price={data.data.contentfulProduct.price}
               data-item-image={data.data.contentfulProduct.image === null ? "" : data.data.contentfulProduct.image.fixed.src}
               data-item-name={data.data.contentfulProduct.name}
-              data-item-url={prodUrl + data.data.contentfulProduct.slug}
+              data-item-url={prodUrl + data.data.contentfulProduct.slug + '/'}
             >
               <i className="fas fa-tags" />
               Buy Now
@@ -69,31 +69,31 @@ export default ProductDetails
 
 export const query = graphql`
   query ProductDetailsQuery($slug: String!) {
-      contentfulProduct(slug: {eq: $slug }) {
+    contentfulProduct(slug: { eq: $slug }) {
       id
       name
-    slug
+      slug
       image {
-      fixed(width: 1120, height: 500) {
-      width
+        fixed(width: 1120, height: 500) {
+          width
           height
-    src
-    srcSet
-  }
-}
-price
+          src
+          srcSet
+        }
+      }
+      price
       details {
-      childMarkdownRemark {
-    html
+        childMarkdownRemark {
+          html
+        }
+      }
+      productMorePhotos {
+        id
+        fixed(width: 1120, height: 600) {
+          src
+        }
+      }
+      rating
+    }
   }
-}
-productMorePhotos {
-  id
-  fixed(width: 1120, height: 600){
-    src
-  }
-}
-rating
-}
-}
 `
