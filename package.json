@@ -1,0 +1,54 @@
+{
+  "name": "OneShopper",
+  "private": true,
+  "description": "E-Commerce site with Gatsby and React",
+  "version": "0.1.0",
+  "author": "Rohit Gupta <rohitguptab33@gmail.com>",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "disqus-react": "^1.0.7",
+    "dotenv": "^8.2.0",
+    "gatsby": "^2.17.4",
+    "gatsby-image": "^2.2.29",
+    "gatsby-plugin-manifest": "^2.2.23",
+    "gatsby-plugin-offline": "^2.2.10",
+    "gatsby-plugin-react-helmet": "^3.1.13",
+    "gatsby-plugin-sharp": "^2.2.32",
+    "gatsby-plugin-snipcart": "^1.1.2",
+    "gatsby-source-contentful": "^2.1.50",
+    "gatsby-source-filesystem": "^2.1.33",
+    "gatsby-transformer-remark": "^2.6.30",
+    "gatsby-transformer-sharp": "^2.3.0",
+    "graphql": "^14.5.8",
+    "prop-types": "^15.7.2",
+    "react": "^16.11.0",
+    "react-awesome-modal": "^2.0.5",
+    "react-dom": "^16.11.0",
+    "react-helmet": "^5.2.1",
+    "react-slick": "^0.24.0",
+    "react-star-rating-component": "^1.4.1",
+    "react-tabs": "^3.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rohitguptab/OneShopper"
+  },
+  "bugs": {
+    "url": "https://github.com/Rohitguptab/OneShopper/issues"
+  }
+}
