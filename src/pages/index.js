@@ -84,7 +84,6 @@ export const query = graphql`
       edges{
         node{
           id
-          url
           name
           slug
           rating
