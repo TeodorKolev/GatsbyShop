@@ -62,7 +62,6 @@ class IndexPost extends React.Component {
                       <span className="price">${items.node.price}</span>
                     </div>
                     <div className="col-sm-8 text-right align-self-center">
-                      {items.node.name} {items.node.url}
                       <a
                         href="#"
                         className="Product snipcart-add-item"
