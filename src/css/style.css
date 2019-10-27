@@ -14,7 +14,7 @@
 /* header css */
 header.site-header{width:100%;background:white;z-index:9;padding:18px 0;}
 ul.navbar-nav.mr-auto li{margin-bottom:0;}
-main{margin:0;}
+main{margin:0; padding-bottom: 50px;}
 .header-cart{width:80px;}
 .header-cart *{color:#dc0000;margin:0;}
 .header-cart a{text-decoration:none;display:flex;justify-content:center;flex-direction:row;text-align:center;margin-top:10px;}
@@ -30,6 +30,7 @@ footer.site-footer{background:black;padding:0;text-align:center;}
 footer.site-footer *{color:#fff;font-size:16px;font-weight:normal}
 .no-image{height:200px;background:#dc000075;display:flex;justify-content:center;flex-direction:column;text-align:center;color:#fff;text-shadow:1px 1px 5px #000;}
 .snipcart-add-item i.fas{margin-right:8px;}
+.product-main {padding-bottom: 20px;}
 .product-main .details_List .details_inner p{font-size:16px;}
 .product-main .details_List .details_inner p{font-size:17px;}
 .snip-layout .snip-header{background:#333!important;}
@@ -72,11 +73,10 @@ span.price{font-weight:bold;font-size:30px;}
 .with-underline:after{content:"";position:absolute;height:2px;width:100%;left:0;right:0;background:#dc0000;top:100%;}
 
 /* slider css */
-.countdown-section{position:relative;margin-bottom:0;}
+.countdown-section{position:relative;margin-bottom:-50px;}
 .countdown-section .gatsby-image-wrapper{height:400px;}
 .countdown-section .countdown-inner{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);width:1110px!important;max-width:90%;z-index:3;}
 .countdown-section .countdown-inner *{color:#fff;text-shadow:2px 2px 9px #000;}
-.countdown-section{}
 .countdown-section:before{content:"";background:#0000004f;position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;z-index:1;}
 .countdown-section .countdown-inner h2{font-size:40px;}
 .countdown-section .countdown-inner a{background:#dc0000;color:#fff;text-decoration:none;padding:12px 25px;border-radius:3px;display:inline-block;letter-spacing:1px;text-shadow:0 0 0 #000;}
