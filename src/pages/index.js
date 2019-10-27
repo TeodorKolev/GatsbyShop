@@ -46,7 +46,7 @@ class IndexPost extends React.Component {
                         data-item-price={items.node.price}
                         data-item-image={items.node.image === null ? "" : items.node.image.fluid.src}
                         data-item-name={items.node.name}
-                        data-item-url={prodUrl + items.node.slug + '/'}
+                        data-item-url={prodUrl + items.node.slug}
                       >
                         <i className="fas fa-shopping-bag" />Add to Cart
                     </a>
