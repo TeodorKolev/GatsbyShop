@@ -36,13 +36,13 @@ class About extends Component {
                 <p>Use the Gatsby CLI to Clone this site.</p>
                 <code>
                   # Clone this Repositories<br></br>
-                  gatsby new TwentySeven
+                  gatsby new GatsbyShop
                   https://github.com/TeodorKolev/GatsbyShop.git
                 </code>
                 <h3>Start developing.</h3>
                 <p>Navigate into your new site’s directory and start it up.</p>
                 <code>
-                  cd TwentySeven<br></br>
+                  cd GatsbyShop<br></br>
                   npm install<br></br>
                   gatsby develop
                 </code>

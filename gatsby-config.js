@@ -4,9 +4,9 @@ dotenv.config();
 const { spaceId, accessToken, snipcart } = process.env;
 
 module.exports = {
-  pathPrefix: "/TwentySeven",
+  pathPrefix: "/GatsbyShop",
   siteMetadata: {
-    title: `TwentySeven`,
+    title: `GatsbyShop`,
     description: `E-Commerce site with Gatsby and React`,
     author: `@teodorkolev`,
   },
@@ -25,7 +25,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `TwentySeven`,
+        name: `GatsbyShop`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
