@@ -26,11 +26,12 @@ header nav ul.navbar-nav li{margin:0 10px;}
 header nav ul.navbar-nav li a{color:#333;font-weight:bold;}
 
 /* header css */
+.wrapper { min-height: calc(100vh - 255px);}
 footer.site-footer{background:black;padding:0;text-align:center;}
 footer.site-footer *{color:#fff;font-size:16px;font-weight:normal}
 .no-image{height:200px;background:#dc000075;display:flex;justify-content:center;flex-direction:column;text-align:center;color:#fff;text-shadow:1px 1px 5px #000;}
 .snipcart-add-item i.fas{margin-right:8px;}
-.product-main {padding-bottom: 20px;}
+.product-main {padding-bottom: 50px;}
 .product-main .details_List .details_inner p{font-size:16px;}
 .product-main .details_List .details_inner p{font-size:17px;}
 .snip-layout .snip-header{background:#333!important;}

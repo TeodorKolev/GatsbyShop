@@ -25,7 +25,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `OneShopper`,
+        name: `TwentySeven`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
