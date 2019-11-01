@@ -1,10 +1,10 @@
-import React from "react"
+import React, { Component } from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-class BlogsPost extends React.Component {
+class BlogsPost extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -40,7 +40,7 @@ class BlogsPost extends React.Component {
       <React.Fragment>
         <ul className="blog-list" onScroll={this.onScrollEvent}>
           {data.data.allContentfulBlogs.edges.slice(0, NoOfPost).map(items => (
-            <li>
+            <li key={items.node.id}>
               <div className="post-item template-square columned">
                 <div className="post-thumbnail">
                   <Img sizes={items.node.featureImage.fluid} />

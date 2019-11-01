@@ -1,8 +1,8 @@
-import React from "react"
+import React, { Component } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-class Copyright extends React.Component {
+class Copyright extends Component {
   render() {
     return (
       <Layout>
@@ -12,7 +12,7 @@ class Copyright extends React.Component {
             <div className="row">
               <div className="col-sm-12">
                 <h2>Copyright</h2>
-                <p>© <span>{(new Date().getFullYear())}</span>; TwentySeven. All rights reserved.</p>
+                <p>© <span>{(new Date().getFullYear())}</span> TwentySeven. All rights reserved.</p>
               </div>
             </div>
           </div>

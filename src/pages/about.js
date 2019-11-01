@@ -1,7 +1,8 @@
-import React from "react"
+import React, { Component } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-class About extends React.Component {
+
+class About extends Component {
   render() {
     return (
       <Layout>
@@ -35,13 +36,13 @@ class About extends React.Component {
                 <p>Use the Gatsby CLI to Clone this site.</p>
                 <code>
                   # Clone this Repositories<br></br>
-                  gatsby new OneShopper
+                  gatsby new TwentySeven
                   https://github.com/TeodorKolev/GatsbyShop.git
                 </code>
                 <h3>Start developing.</h3>
                 <p>Navigate into your new site’s directory and start it up.</p>
                 <code>
-                  cd OneShopper<br></br>
+                  cd TwentySeven<br></br>
                   npm install<br></br>
                   gatsby develop
                 </code>

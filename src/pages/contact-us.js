@@ -1,17 +1,17 @@
-import React from "react"
+import React, { Component } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { formSpaceID } from "../utils/constants"
 
-class Contact extends React.Component {
+class Contact extends Component {
   render() {
     return (
       <Layout>
         <SEO title="Contact Us" keywords={[`gatsby`, `application`, `react`]} />
         <div className="Contact-us">
           <div className="container">
-            {/* To make form work, use your own formspree credentials in action="" */}
             <form
-              action="https://formspree.io/xyygngez"
+              action={'https://formspree.io/' + formSpaceID}
               method="POST"
               name="contact"
             >

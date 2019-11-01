@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
@@ -9,7 +9,7 @@ import Countdown from "../components/countdown"
 import StarRatingComponent from "react-star-rating-component"
 import { prodUrl } from "../utils/constants"
 
-class IndexPost extends React.Component {
+class IndexPost extends Component {
   render() {
     const { data } = this.props
 
