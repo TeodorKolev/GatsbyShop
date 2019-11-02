@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
-import Img from "gatsby-image";
-import { Link } from "gatsby";
+import React, { Component } from "react"
+import Slider from "react-slick"
+import Img from "gatsby-image"
+import { Link } from "gatsby"
 
 var settings = {
   dots: true,
@@ -10,13 +10,12 @@ var settings = {
   autoplay: true,
   autoplaySpeed: 3000,
   slidesToShow: 1,
-  slidesToScroll: 1
-};
+  slidesToScroll: 1,
+}
 
-export default class Banner extends React.Component {
+export default class Banner extends Component {
   render() {
-
-    const { BannerData } = this.props;
+    const { BannerData } = this.props
 
     return (
       <div className="slider-section">
@@ -37,6 +36,6 @@ export default class Banner extends React.Component {
           ))}
         </Slider>
       </div>
-    );
+    )
   }
 }
