@@ -1,9 +1,11 @@
 import React from "react"
 import Img from "gatsby-image"
-import { DiscussionEmbed } from "disqus-react"
+import { DiscussionEmbed } from "disqus-react";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
+
 
 const disqusShortname = "shopper"
 

@@ -1,10 +1,10 @@
 import React from "react"
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
-import StarRatingComponent from "react-star-rating-component"
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import StarRatingComponent from 'react-star-rating-component';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { prodUrl } from "../utils/constants"
+import { prodUrl } from '../utils/constants';
 
 const ProductDetails = data => (
   <Layout>

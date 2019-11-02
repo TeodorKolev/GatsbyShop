@@ -6,10 +6,10 @@
 
   1.  **Setup Contentful Models**
 
-      Use [contentful-cli](https://github.com/contentful/contentful-cli) to import the models from twentyseven.json
+      Use [contentful-cli](https://github.com/contentful/contentful-cli) to import the models from oneshopper.json
 
       ```
-      contentful space --space-id <CONTENTFUL_SPACE_ID> import --content-file twentyseven.json
+      contentful space --space-id <CONTENTFUL_SPACE_ID> import --content-file oneshopper.json
       ```
 
   1.  **Start developing.**
@@ -17,7 +17,7 @@
       Navigate into your new site’s directory and start it up.
 
       ```sh
-      cd GatsbyShop
+      cd OneShopper
       npm install
       gatsby develop
       ```
