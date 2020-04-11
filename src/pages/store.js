@@ -5,14 +5,17 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StarRatingComponent from "react-star-rating-component"
 import { prodUrl } from "../utils/constants"
+import QRCode from "qrcode"
 
 class IndexPost extends Component {
   constructor(props) {
     super(props)
     this.state = {
       NoOfPost: 6,
+      clicked_rate_plans: {}
     }
     this.handleScroll = this.handleScroll.bind(this)
+    this.canvasRefs = {}
   }
 
   componentDidMount() {
@@ -32,6 +35,20 @@ class IndexPost extends Component {
         NoOfPost: count,
       })
     }
+  }
+
+  getPrice = (id, price) => {
+    const priceString = '$ ' + price.toString()
+    QRCode.toCanvas(this.canvasRefs[`canvas-${id}`], priceString, (error) => {
+      if (error) console.error('Error: ' + error)
+      console.log('success!');
+    })
+
+    this.setState(previousState => {
+      const clicked_rate_plans = { ...previousState.clicked_rate_plans };
+      clicked_rate_plans[id] = !clicked_rate_plans[id];
+      return { clicked_rate_plans };
+    });
   }
 
   render() {
@@ -67,7 +84,20 @@ class IndexPost extends Component {
                     <p>{items.node.details.childMarkdownRemark.excerpt}</p>
                     <div className="row">
                       <div className="col-sm-4 align-self-center">
-                        <span className="price">${items.node.price}</span>
+                        <canvas
+                          ref={ref =>
+                            (this.canvasRefs[`canvas-${items.node.id}`] = ref)
+                          }
+                        ></canvas>
+                        <span
+                          className="price"
+                          className={`price ${this.state.clicked_rate_plans[items.node.id] !== undefined ? "active" : "not-active"}`}
+                          onClick={() =>
+                            this.getPrice(items.node.id, items.node.price)
+                          }
+                        >
+                          Price
+                        </span>
                       </div>
                       <div className="col-sm-8 text-right align-self-center">
                         <a
