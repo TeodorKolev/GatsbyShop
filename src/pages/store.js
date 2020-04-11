@@ -12,7 +12,7 @@ class IndexPost extends Component {
     super(props)
     this.state = {
       NoOfPost: 6,
-      clicked_rate_plans: {}
+      priceAskedIds: {}
     }
     this.handleScroll = this.handleScroll.bind(this)
     this.canvasRefs = {}
@@ -45,9 +45,9 @@ class IndexPost extends Component {
     })
 
     this.setState(previousState => {
-      const clicked_rate_plans = { ...previousState.clicked_rate_plans };
-      clicked_rate_plans[id] = !clicked_rate_plans[id];
-      return { clicked_rate_plans };
+      const priceAskedIds = { ...previousState.priceAskedIds };
+      priceAskedIds[id] = !priceAskedIds[id];
+      return { priceAskedIds };
     });
   }
 
@@ -83,23 +83,23 @@ class IndexPost extends Component {
                     />
                     <p>{items.node.details.childMarkdownRemark.excerpt}</p>
                     <div className="row">
-                      <div className="col-sm-4 align-self-center">
+                      <div className="col-sm-6 align-self-center price-holder">
                         <canvas
+                          className={`price-canvas ${this.state.priceAskedIds[items.node.id] === undefined ? "hidden" : "visible"}`}
                           ref={ref =>
                             (this.canvasRefs[`canvas-${items.node.id}`] = ref)
                           }
                         ></canvas>
                         <span
-                          className="price"
-                          className={`price ${this.state.clicked_rate_plans[items.node.id] !== undefined ? "active" : "not-active"}`}
+                          className={`price ${this.state.priceAskedIds[items.node.id] !== undefined ? "hidden" : "visible"}`}
                           onClick={() =>
                             this.getPrice(items.node.id, items.node.price)
                           }
                         >
-                          Price
+                          Ask for a price
                         </span>
                       </div>
-                      <div className="col-sm-8 text-right align-self-center">
+                      <div className="col-sm-6 text-right align-self-end">
                         <a
                           href="#"
                           className="Product snipcart-add-item"
