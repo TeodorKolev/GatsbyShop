@@ -41,7 +41,6 @@ class IndexPost extends Component {
     const priceString = '$ ' + price.toString()
     QRCode.toCanvas(this.canvasRefs[`canvas-${id}`], priceString, (error) => {
       if (error) console.error('Error: ' + error)
-      console.log('success!');
     })
 
     this.setState(previousState => {
