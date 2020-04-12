@@ -44,10 +44,10 @@ class IndexPost extends Component {
     })
 
     this.setState(previousState => {
-      const priceAskedIds = { ...previousState.priceAskedIds };
-      priceAskedIds[id] = !priceAskedIds[id];
-      return { priceAskedIds };
-    });
+      const priceAskedIds = { ...previousState.priceAskedIds }
+      priceAskedIds[id] = !priceAskedIds[id]
+      return { priceAskedIds }
+    })
   }
 
   render() {
