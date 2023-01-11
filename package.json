@@ -17,7 +17,7 @@
     "gatsby-plugin-snipcart": "^1.1.2",
     "gatsby-source-contentful": "^2.1.50",
     "gatsby-source-filesystem": "^2.1.33",
-    "gatsby-transformer-remark": "^2.6.30",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.3.0",
     "graphql": "^14.5.8",
     "prop-types": "^15.7.2",
